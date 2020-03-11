@@ -8,5 +8,5 @@ Repository of my data science projects including
 - Exploratory data analysis projects
 - Codecademy,Coursera and etc. capstone projects
 
-[Website](https://www.behdad.info/)
+[Website](https://behdad.info/)
 
