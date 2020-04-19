@@ -35,7 +35,7 @@ In classification problems, we use two types of algorithms (dependent on the kin
 In regression problems, we do not have such inconsistencies in output. The output is always continuous in nature and requires no further treatment.
 <ol>
     
-<li>Confusion Matrix </li>
+<li>**Confusion Matrix** </li>
     
 A confusion matrix is an N*N matrix, where N is the number of classes being predicted. For the problem in hand, we have N=2, and hence we get a 2*2 matrix. Here are a few definitions, you need to remember for a confusion matrix :
 
@@ -57,7 +57,7 @@ In general we are concerned with one of the above defined metric. For instance, 
 
  
 
-<li>F1 Score</li>
+<li>**F1 Score**</li>
     
 In the last section, we discussed precision and recall for classification problems and also highlighted the importance of choosing precision/recall basis our use case. What if for a use case, we are trying to get the best precision and recall at the same time? F1-Score is the harmonic mean of precision and recall values for a classification problem. The formula for F1-Score is as follows:
 
@@ -76,7 +76,7 @@ This seems simple. There are situations however for which a data scientist would
 
 Fbeta measures the effectiveness of a model with respect to a user who attaches β times as much importance to recall as precision.
 
-<li>Gain and Lift charts</li>
+<li>**Gain and Lift charts**</li>
     
 Gain and Lift chart are mainly concerned to check the rank ordering of the probabilities. Here are the steps to build a Lift/Gain chart:
 
@@ -122,7 +122,7 @@ Lift / Gain charts are widely used in campaign targeting problems. This tells us
 
  
 
-<li>Kolomogorov Smirnov chart</li>
+<li>**Kolomogorov Smirnov chart**</li>
     
 K-S or Kolmogorov-Smirnov chart measures performance of classification models. More accurately, K-S is a measure of the degree of separation between the positive and negative distributions. The K-S is 100, if the scores partition the population into two separate groups in which one group contains all the positives and the other all the negatives.
 
@@ -142,7 +142,7 @@ model evaluation, Kolomogorov Smirnov, KS
 
 The metrics covered till here are mostly used in classification problems. Till here, we learnt about confusion matrix, lift and gain chart and kolmogorov-smirnov chart. Let’s proceed and learn few more important metrics.
 
-<li>Area Under the ROC curve (AUC – ROC)</li>
+<li>**Area Under the ROC curve (AUC – ROC)**</li>
     
 This is again one of the popular metrics used in the industry.  The biggest advantage of using ROC curve is that it is independent of the change in proportion of responders. This statement will get clearer in the following sections.
 
@@ -197,7 +197,7 @@ ROC curve on the other hand is almost independent of the response rate. This is 
 
  
 
-<li>Log Loss</li>
+<li>**Log Loss**</li>
 AUC ROC considers the predicted probabilities for determining our model’s performance. However, there is an issue with AUC ROC, it only takes into account the order of probabilities and hence it does not take into account the model’s capability to predict higher probability for samples more likely to be positive. In that case, we could us the log loss which is nothing but negative average of the log of corrected predicted probabilities for each instance.
 
 <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/Screenshot-2019-05-14-at-12.48.43-PM.png">
@@ -225,7 +225,7 @@ So, lower the log loss, better the model. However, there is no absolute measure 
 
 Whereas the AUC is computed with regards to binary classification with a varying decision threshold, log loss actually takes “certainty” of classification into account.
 
-<li>Gini Coefficient</li>
+<li>**Gini Coefficient**</li>
     
 Gini coefficient is sometimes used in classification problems. Gini coefficient can be straigh away derived from the AUC ROC number. Gini is nothing but ratio between area between the ROC curve and the diagnol line & the area of the above triangle. Following is the formulae used :
 
@@ -235,7 +235,7 @@ Gini above 60% is a good model. For the case in hand we get Gini as 92.7%.
 
  
 
-<li>Concordant – Discordant ratio</li>
+<li>**Concordant – Discordant ratio**</li>
 This is again one of the most important metric for any classification predictions problem. To understand this let’s assume we have 3 students who have some likelihood to pass this year. Following are our predictions :
 
 A – 0.9
@@ -256,7 +256,7 @@ Hence, we have 50% of concordant cases in this example. Concordant ratio of more
 
  
 
-<li>Root Mean Squared Error (RMSE)</li>
+<li>**Root Mean Squared Error (RMSE)**</li>
     
 RMSE is the most popular evaluation metric used in regression problems. It follows an assumption that error are unbiased and follow a normal distribution. Here are the key points to consider on RMSE:
 
@@ -276,7 +276,7 @@ where, N is Total Number of Observations.
 
  
 
-<li>Root Mean Squared Logarithmic Error</li>
+<li>**Root Mean Squared Logarithmic Error**</li>
     
 In case of Root mean squared logarithmic error, we take the log of the predictions and actual values. So basically, what changes are the variance that we are measuring. RMSLE is usually used when we don’t want to penalize huge differences in the predicted and the actual values when both predicted and true values are huge numbers.
 
@@ -288,7 +288,7 @@ If either predicted or the actual value is big: RMSE > RMSLE
 If both predicted and actual values are big: RMSE > RMSLE (RMSLE becomes almost negligible)
  
 
-<li>R-Squared/Adjusted R-Squared</li>
+<li>**R-Squared/Adjusted R-Squared**</li>
     
 We learned that when the RMSE decreases, the model’s performance will improve. But these values alone are not intuitive.
 
@@ -325,7 +325,7 @@ Though, cross validation isn’t a really an evaluation metric which is used ope
 
 Let’s now understand cross validation in detail.
 
-<li>Cross Validation</li>
+<li>**Cross Validation**</li>
     
 Let’s first understand the importance of cross validation. Due to busy schedules, these days I don’t get much time to participate in data science competitions. Long time back, I participated in TFI Competition on Kaggle. Without delving into my competition performance, I would like to show you the dissimilarity between my public and private leaderboard score.
 
@@ -344,7 +344,7 @@ In the following section, I will discuss how you can know if a solution is an ov
 
  
 
-The concept : Cross Validation
+#### The concept : Cross Validation
     
 Cross Validation is one of the most important concepts in any type of data modelling. It simply says, try to leave a sample on which you do not train the model and test the model on this sample before finalizing the model.
 
@@ -362,7 +362,7 @@ What if, we make a 50:50 split of training population and the train on first 50 
 
  
 
-### k-fold Cross validation
+#### k-fold Cross validation
     
 Let’s extrapolate the last example to k-fold from 2-fold cross validation. Now, we will try to visualize how does a k-fold validation work.
 
@@ -374,12 +374,10 @@ This is a 7-fold cross validation.
 
 Here’s what goes on behind the scene : we divide the entire population into 7 equal samples. Now we train models on 6 samples (Green boxes) and validate on 1 sample (grey box). Then, at the second iteration we train the model with a different sample held as validation. In 7 iterations, we have basically built model on each sample and held each of them as validation. This is a way to reduce the selection bias and reduce the variance in prediction power. Once we have all the 7 models, we take average of the error terms to find which of the models is best.
 
- 
-
 How does this help to find best (non over-fit) model?
 k-fold cross validation is widely used to check whether a model is an overfit or not. If the performance metrics at each of the k times modelling are close to each other and the mean of metric is highest. In a Kaggle competition, you might rely more on the cross validation score and not on the Kaggle public score. This way you will be sure that the Public score is not just by chance.
 
-But how do we choose k?
+**But how do we choose k?**
 This is the tricky part. We have a trade off to choose k.
 
 For a small k, we have a higher selection bias but low variance in the performances.
