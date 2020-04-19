@@ -33,9 +33,11 @@ In classification problems, we use two types of algorithms (dependent on the kin
 </ol>
 
 In regression problems, we do not have such inconsistencies in output. The output is always continuous in nature and requires no further treatment.
-
-1. Confusion Matrix
-A confusion matrix is an N X N matrix, where N is the number of classes being predicted. For the problem in hand, we have N=2, and hence we get a 2 X 2 matrix. Here are a few definitions, you need to remember for a confusion matrix :
+<ol>
+    
+<li>Confusion Matrix </li>
+    
+A confusion matrix is an N*N matrix, where N is the number of classes being predicted. For the problem in hand, we have N=2, and hence we get a 2*2 matrix. Here are a few definitions, you need to remember for a confusion matrix :
 
 - **Accuracy** : the proportion of the total number of predictions that were correct.
 - **Positive Predictive Value or Precision** : the proportion of positive cases that were correctly identified.
@@ -52,9 +54,11 @@ The accuracy for the problem in hand comes out to be 88%.  As you can see from t
 
 In general we are concerned with one of the above defined metric. For instance, in a pharmaceutical company, they will be more concerned with minimal wrong positive diagnosis. Hence, they will be more concerned about high Specificity. On the other hand an attrition model will be more concerned with Sensitivity. Confusion matrix are generally used only with class output models.
 
+
  
 
-2. F1 Score
+<li>F1 Score</li>
+    
 In the last section, we discussed precision and recall for classification problems and also highlighted the importance of choosing precision/recall basis our use case. What if for a use case, we are trying to get the best precision and recall at the same time? F1-Score is the harmonic mean of precision and recall values for a classification problem. The formula for F1-Score is as follows:
 
 <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/Screenshot-2019-05-14-at-12.12.47-PM-768x120.png">
@@ -72,7 +76,8 @@ This seems simple. There are situations however for which a data scientist would
 
 Fbeta measures the effectiveness of a model with respect to a user who attaches β times as much importance to recall as precision.
 
-3. Gain and Lift charts
+<li>Gain and Lift charts</li>
+    
 Gain and Lift chart are mainly concerned to check the rank ordering of the probabilities. Here are the steps to build a Lift/Gain chart:
 
 Step 1 : Calculate probability for each observation
@@ -117,7 +122,8 @@ Lift / Gain charts are widely used in campaign targeting problems. This tells us
 
  
 
-4. Kolomogorov Smirnov chart
+<li>Kolomogorov Smirnov chart</li>
+    
 K-S or Kolmogorov-Smirnov chart measures performance of classification models. More accurately, K-S is a measure of the degree of separation between the positive and negative distributions. The K-S is 100, if the scores partition the population into two separate groups in which one group contains all the positives and the other all the negatives.
 
 On the other hand, If the model cannot differentiate between positives and negatives, then it is as if the model selects cases randomly from the population. The K-S would be 0. In most classification models the K-S will fall between 0 and 100, and that the higher the value the better the model is at separating the positive from negative cases.
@@ -136,7 +142,8 @@ model evaluation, Kolomogorov Smirnov, KS
 
 The metrics covered till here are mostly used in classification problems. Till here, we learnt about confusion matrix, lift and gain chart and kolmogorov-smirnov chart. Let’s proceed and learn few more important metrics.
 
-5. Area Under the ROC curve (AUC – ROC)
+<li>Area Under the ROC curve (AUC – ROC)</li>
+    
 This is again one of the popular metrics used in the industry.  The biggest advantage of using ROC curve is that it is independent of the change in proportion of responders. This statement will get clearer in the following sections.
 
 Let’s first try to understand what is ROC (Receiver operating characteristic) curve. If we look at the confusion matrix below, we observe that for a probabilistic model, we get different value for each metric.
@@ -170,7 +177,7 @@ Note that the area of entire square is 1*1 = 1. Hence AUC itself is the ratio un
 .50-.60 = fail (F)
 We see that we fall under the excellent band for the current model. But this might simply be over-fitting. In such cases it becomes very important to to in-time and out-of-time validations.
 
-Points to Remember:
+<b>Points to Remember:</b>
 
 1. For a model which gives class as output, will be represented as a single point in ROC plot.
 
@@ -180,7 +187,8 @@ Points to Remember:
 
  
 
-Advantages of using ROC
+#### Advantages of using ROC
+    
 Why should you use ROC and not metrics like lift curve?
 
 Lift is dependent on total response rate of the population. Hence, if the response rate of the population changes, the same model will give a different lift chart. A solution to this concern can be true lift chart (finding the ratio of lift and perfect model lift at each decile). But such ratio rarely makes sense for the business.
@@ -189,7 +197,7 @@ ROC curve on the other hand is almost independent of the response rate. This is 
 
  
 
-6. Log Loss
+<li>Log Loss</li>
 AUC ROC considers the predicted probabilities for determining our model’s performance. However, there is an issue with AUC ROC, it only takes into account the order of probabilities and hence it does not take into account the model’s capability to predict higher probability for samples more likely to be positive. In that case, we could us the log loss which is nothing but negative average of the log of corrected predicted probabilities for each instance.
 
 <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/Screenshot-2019-05-14-at-12.48.43-PM.png">
@@ -217,7 +225,8 @@ So, lower the log loss, better the model. However, there is no absolute measure 
 
 Whereas the AUC is computed with regards to binary classification with a varying decision threshold, log loss actually takes “certainty” of classification into account.
 
-7. Gini Coefficient
+<li>Gini Coefficient</li>
+    
 Gini coefficient is sometimes used in classification problems. Gini coefficient can be straigh away derived from the AUC ROC number. Gini is nothing but ratio between area between the ROC curve and the diagnol line & the area of the above triangle. Following is the formulae used :
 
 Gini = 2*AUC – 1
@@ -226,7 +235,7 @@ Gini above 60% is a good model. For the case in hand we get Gini as 92.7%.
 
  
 
-8. Concordant – Discordant ratio
+<li>Concordant – Discordant ratio</li>
 This is again one of the most important metric for any classification predictions problem. To understand this let’s assume we have 3 students who have some likelihood to pass this year. Following are our predictions :
 
 A – 0.9
@@ -247,7 +256,8 @@ Hence, we have 50% of concordant cases in this example. Concordant ratio of more
 
  
 
-9. Root Mean Squared Error (RMSE)
+<li>Root Mean Squared Error (RMSE)</li>
+    
 RMSE is the most popular evaluation metric used in regression problems. It follows an assumption that error are unbiased and follow a normal distribution. Here are the key points to consider on RMSE:
 
 The power of ‘square root’  empowers this metric to show large number deviations.
@@ -266,7 +276,8 @@ where, N is Total Number of Observations.
 
  
 
-10. Root Mean Squared Logarithmic Error
+<li>Root Mean Squared Logarithmic Error</li>
+    
 In case of Root mean squared logarithmic error, we take the log of the predictions and actual values. So basically, what changes are the variance that we are measuring. RMSLE is usually used when we don’t want to penalize huge differences in the predicted and the actual values when both predicted and true values are huge numbers.
 
 <img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/05/Screenshot-2019-05-16-at-6.43.11-PM-768x236.png">
@@ -277,7 +288,8 @@ If either predicted or the actual value is big: RMSE > RMSLE
 If both predicted and actual values are big: RMSE > RMSLE (RMSLE becomes almost negligible)
  
 
-11. R-Squared/Adjusted R-Squared
+<li>R-Squared/Adjusted R-Squared</li>
+    
 We learned that when the RMSE decreases, the model’s performance will improve. But these values alone are not intuitive.
 
 In the case of a classification problem, if the model has an accuracy of 0.8, we could gauge how good our model is against a random model, which has an accuracy of  0.5. So the random model can be treated as a benchmark. But when we talk about the RMSE metrics, we do not have a benchmark to compare.
@@ -313,7 +325,8 @@ Though, cross validation isn’t a really an evaluation metric which is used ope
 
 Let’s now understand cross validation in detail.
 
-12. Cross Validation
+<li>Cross Validation</li>
+    
 Let’s first understand the importance of cross validation. Due to busy schedules, these days I don’t get much time to participate in data science competitions. Long time back, I participated in TFI Competition on Kaggle. Without delving into my competition performance, I would like to show you the dissimilarity between my public and private leaderboard score.
 
 Here is an example of scoring on Kaggle!
@@ -321,7 +334,7 @@ Here is an example of scoring on Kaggle!
 For TFI competition, following were three of my solution and scores (Lesser the better) :
 <img src="https://www.analyticsvidhya.com/wp-content/uploads/2015/05/kagglescores.png">
 
-kaggle
+**kaggle**
 
 You will notice that the third entry which has the worst Public score turned to be the best model on Private ranking. There were more than 20 models above the “submission_all.csv”, but I still chose “submission_all.csv” as my final entry (which really worked out well). What caused this phenomenon ? The dissimilarity in my public and private leaderboard is caused by over-fitting.
 
@@ -332,6 +345,7 @@ In the following section, I will discuss how you can know if a solution is an ov
  
 
 The concept : Cross Validation
+    
 Cross Validation is one of the most important concepts in any type of data modelling. It simply says, try to leave a sample on which you do not train the model and test the model on this sample before finalizing the model.
 
 <img src="https://www.analyticsvidhya.com/wp-content/uploads/2015/05/validation.png">
@@ -349,6 +363,7 @@ What if, we make a 50:50 split of training population and the train on first 50 
  
 
 ### k-fold Cross validation
+    
 Let’s extrapolate the last example to k-fold from 2-fold cross validation. Now, we will try to visualize how does a k-fold validation work.
 
 <img src="https://www.analyticsvidhya.com/wp-content/uploads/2015/05/kfolds-150x150.png">
@@ -363,14 +378,6 @@ Here’s what goes on behind the scene : we divide the entire population into 7 
 
 How does this help to find best (non over-fit) model?
 k-fold cross validation is widely used to check whether a model is an overfit or not. If the performance metrics at each of the k times modelling are close to each other and the mean of metric is highest. In a Kaggle competition, you might rely more on the cross validation score and not on the Kaggle public score. This way you will be sure that the Public score is not just by chance.
-
- 
-
-How do we implement k-fold with any model?
-Coding k-fold in R and Python are very similar. Here is how you code a k-fold in Python :
-
-from sklearn import cross_validation model = RandomForestClassifier(n_estimators=100) #Simple K-Fold cross validation. 5 folds. #(Note: in older scikit-learn versions the "n_folds" argument is named "k".) cv = cross_validation.KFold(len(train), n_folds=5, indices=False) results = [] # "model" can be replaced by your model object # "Error_function" can be replaced by the error function of your analysis for traincv, testcv in cv:             probas = model.fit(train[traincv], target[traincv]).predict_proba(train[testcv])             results.append( Error_function ) #print out the mean of the cross-validated results print "Results: " + str( np.array(results).mean() )
- 
 
 But how do we choose k?
 This is the tricky part. We have a trade off to choose k.
@@ -387,11 +394,7 @@ k = number of observations (n) :  This is also known as “Leave one out”. We 
 
 Generally a value of k = 10 is recommended for most purpose.
 
- 
+</ol>
 
-End Notes
-Measuring the performance on training sample is point less. And leaving a in-time validation batch aside is a waste of data. K-Fold gives us a way to use every singe datapoint which can reduce this selection bias to a good extent. Also, K-fold cross validation can be used with any modelling technique.
+For more information you can check out [analyticsvidhya website](https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/)
 
-In addition, the metrics covered in this article are some of the most used metrics of evaluation in a classification and regression problems.
-
-Which metric do you often use in classification and regression problem ? Have you used k-fold cross validation before for any kind of analysis? Did you see any significant benefits against using a batch  validation? Do let us know your thoughts about this guide in the comments section below.
