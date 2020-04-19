@@ -1,4 +1,4 @@
-## Evaluating Regression Models Performance
+## Evaluating Models Performance
 The idea of building machine learning models works on a constructive feedback principle. You build a model, get feedback from metrics, make improvements and continue until you achieve a desirable accuracy. Evaluation metrics explain the performance of a model. An important aspect of evaluation metrics is their capability to discriminate among model results.
 
 I have seen plenty of analysts and aspiring data scientists not even bothering to check how robust their model is. Once they are finished building a model, they hurriedly map predicted values on unseen data. This is an incorrect approach.
@@ -142,7 +142,7 @@ model evaluation, Kolomogorov Smirnov, KS
 
 The metrics covered till here are mostly used in classification problems. Till here, we learnt about confusion matrix, lift and gain chart and kolmogorov-smirnov chart. Let’s proceed and learn few more important metrics.
 
-<li>**Area Under the ROC curve (AUC – ROC)**</li>
+<li><b>Area Under the ROC curve (AUC – ROC)</b></li>
     
 This is again one of the popular metrics used in the industry.  The biggest advantage of using ROC curve is that it is independent of the change in proportion of responders. This statement will get clearer in the following sections.
 
@@ -233,7 +233,7 @@ Gini above 60% is a good model. For the case in hand we get Gini as 92.7%.
 
  
 
-<li>**Concordant – Discordant ratio**</li>
+<li><b>Concordant – Discordant ratio</b></li>
 This is again one of the most important metric for any classification predictions problem. To understand this let’s assume we have 3 students who have some likelihood to pass this year. Following are our predictions :
 
 A – 0.9
@@ -392,5 +392,5 @@ Generally a value of k = 10 is recommended for most purpose.
 
 </ol>
 
-For more information you can check out [analyticsvidhya website](https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/)
+Refrence to [analyticsvidhya website](https://www.analyticsvidhya.com/blog/2019/08/11-important-model-evaluation-error-metrics/)
 
