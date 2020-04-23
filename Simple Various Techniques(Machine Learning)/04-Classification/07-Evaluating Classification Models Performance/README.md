@@ -87,11 +87,11 @@ To understand the intuition behind it, You have to follow me in the following sc
 <img src="https://miro.medium.com/max/938/1*hyy93x3O33xAkD2i_MKl4A.png">
 
 - Scenario-2 — You still work in the same company but this time you decided to do it in a more systematic way:
-    1 .Inspect your historical data and take a group of customers who actually bought the offer and try to extract those information (browsing device type (mobile or laptop), Age, Salary, Savings)
-    2 .Measure those factors and try to discover which of them affects the number of Purchased products or in other words fit the data to a Logistic Regression model.
-    3 .Make a prediction of which customers are more likely to purchase the product.
-    4 .Then specially target those people which you predicted are more likely to buy the product.
-    5 .Then by measuring the response of those targeted group represented in that curve ‘CAP Curve’.
+     1. Inspect your historical data and take a group of customers who actually bought the offer and try to extract those information (browsing device type (mobile or laptop), Age, Salary, Savings)
+     2. Measure those factors and try to discover which of them affects the number of Purchased products or in other words fit the data to a Logistic Regression model.
+     3. Make a prediction of which customers are more likely to purchase the product.
+     4. Then specially target those people which you predicted are more likely to buy the product.
+     5. Then by measuring the response of those targeted group represented in that curve ‘CAP Curve’.
 
 We definitely can notice the improvement; when you contacted 20,000 targeted customers you got about 5,000 positive responses where in scenario#1 by contacting the same number of customers, you got only 2,000 positive responses.
 
