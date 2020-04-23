@@ -63,11 +63,12 @@ The answer is it is highly recommended when a particular result is very much sen
     - also known as "Specificity"
 - **Precision**: When it predicts yes, how often is it correct?
     - TP/predicted yes
-- Prevalence: How often does the yes condition actually occur in our sample?
+- **Prevalence**: How often does the yes condition actually occur in our sample?
     - actual yes/total 
     
 ### Receiver Operating Characteristics (ROC) Curve and cumulative accuracy profile (CAP)
 While there are several metrics such as Accuracy and Recall to measure the performance of a Machine Learning model, ROC Curve and CAP Curve are great for classification problems.
+
 #### Receiver Operating Characteristic (ROC) Curve
 The Receiver Operating Characteristic Curve, better known as the ROC Curve, is an excellent method for measuring the performance of a Classification model. The True Positive Rate (TPR) is plot against False Positive Rate (FPR) for the probabilities of the classifier predictions.
 Measuring the area under the ROC curve is also a very useful method for evaluating a model. ROC is the ratio of True Positive Rate (TPR) and False Positive Rate (FPR). In our disease detection example, TPR is the measure of the ratio between the number of accurate predictions of people having disease and the total number of people having disease in actual. FPR is the ratio between the number of people who are predicted as not to have disease correctly and the total number of people who are not having the disease in actual. So, if we plot the curve, it comes like this:
@@ -81,16 +82,16 @@ Simply, after calculating the area under the plot. More the area under the curve
 #### Cumulative Accuracy Profile (CAP) Curve
 The CAP Curve tries to analyse how to effectively identify all data points of a given class using minimum number of tries.
 To understand the intuition behind it, You have to follow me in the following scenarios:
-- Scenario#1 — Imagine that you as a data scientist work in a company that want to promote its new product so they will send an email with their offer to all the customers and usually 10% of the customer responses and actually buys the product so they though that that will be the case for this time and that scenario is called the Random Scenario.
+- Scenario-1 — Imagine that you as a data scientist work in a company that want to promote its new product so they will send an email with their offer to all the customers and usually 10% of the customer responses and actually buys the product so they though that that will be the case for this time and that scenario is called the Random Scenario.
 
 <img src="https://miro.medium.com/max/938/1*hyy93x3O33xAkD2i_MKl4A.png">
 
-- Scenario#2 — You still work in the same company but this time you decided to do it in a more systematic way:
-    1. Inspect your historical data and take a group of customers who actually bought the offer and try to extract those information (browsing device type (mobile or laptop), Age, Salary, Savings)
-    2. Measure those factors and try to discover which of them affects the number of Purchased products or in other words fit the data to a Logistic Regression model.
+- Scenario-2 — You still work in the same company but this time you decided to do it in a more systematic way:
+    1 .Inspect your historical data and take a group of customers who actually bought the offer and try to extract those information (browsing device type (mobile or laptop), Age, Salary, Savings)
+    2 .Measure those factors and try to discover which of them affects the number of Purchased products or in other words fit the data to a Logistic Regression model.
     3 .Make a prediction of which customers are more likely to purchase the product.
-    4. Then specially target those people which you predicted are more likely to buy the product.
-    5. Then by measuring the response of those targeted group represented in that curve ‘CAP Curve’.
+    4 .Then specially target those people which you predicted are more likely to buy the product.
+    5 .Then by measuring the response of those targeted group represented in that curve ‘CAP Curve’.
 
 We definitely can notice the improvement; when you contacted 20,000 targeted customers you got about 5,000 positive responses where in scenario#1 by contacting the same number of customers, you got only 2,000 positive responses.
 
@@ -112,11 +113,10 @@ Plotting such a hypothetical model will help us as a reference to evaluate your 
 **First**:
 - Calculate area under the Perfect Model Curve (aP)
 - Calculate area under the Perfect Model Curve (aR)
-- Calculate Accuracy rate(AR) = aR/ aP; as (AR)~1 (The better is your model) and as (AR)~0 (The worse is your model)
+- Calculate Accuracy rate(AR) = aR/ aP; as (AR)~1 (The better is your model) and as (AR)~0 (The worse is your model).
+
 **Second**:
-Draw a line from the 50% point (50,000) in the Total Contacted axis up to the Model CAP Curve
-Then from that intersection point, Project it to the Purchased axis
-This X% value represents how good your model is:
+Draw a line from the 50% point (50,000) in the Total Contacted axis up to the Model CAP Curve. Then from that intersection point, Project it to the Purchased axis. This X% value represents how good your model is:
 - If X < 60% /(6000) then you have a rubbish model
 - If 60% < X < 70% /(7000) then you have a poor model
 - If 70% < X < 80% /(8000) then you have a good model
@@ -125,8 +125,8 @@ This X% value represents how good your model is:
 
 #### A couple other terms are also worth mentioning:
 
-- Null Error Rate: This is how often you would be wrong if you always predicted the majority class. This can be a useful baseline metric to compare your classifier against. However, the best classifier for a particular application will sometimes have a higher error rate than the null error rate, as demonstrated by the Accuracy Paradox.
-- Cohen's Kappa: This is essentially a measure of how well the classifier performed as compared to how well it would have performed simply by chance. In other words, a model will have a high Kappa score if there is a big difference between the accuracy and the null error rate. 
-- F Score: This is a weighted average of the true positive rate (recall) and precision.
+- **Null Error Rate**: This is how often you would be wrong if you always predicted the majority class. This can be a useful baseline metric to compare your classifier against. However, the best classifier for a particular application will sometimes have a higher error rate than the null error rate, as demonstrated by the Accuracy Paradox.
+- **Cohen's Kappa**: This is essentially a measure of how well the classifier performed as compared to how well it would have performed simply by chance. In other words, a model will have a high Kappa score if there is a big difference between the accuracy and the null error rate. 
+- **F Score**: This is a weighted average of the true positive rate (recall) and precision.
 
 Refrencee and more info : [wikipedia-False-positives-and-false-negatives](https://en.wikipedia.org/wiki/False_positives_and_false_negatives)[wikipedia-Type-I-and-type-II-errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) [wikipedia-Confusion-matrix](https://en.wikipedia.org/wiki/Confusion_matrix)
