@@ -112,7 +112,7 @@ Plotting such a hypothetical model will help us as a reference to evaluate your 
 #### There are 2 approaches to analyze the previous graph:
 **First**:
 - Calculate area under the Perfect Model Curve (aP)
-- Calculate area under the Perfect Model Curve (aR)
+- Calculate area under the Cap Curve (aR)
 - Calculate Accuracy rate(AR) = aR/ aP; as (AR)~1 (The better is your model) and as (AR)~0 (The worse is your model).
 
 **Second**:
@@ -129,4 +129,4 @@ Draw a line from the 50% point (50,000) in the Total Contacted axis up to the Mo
 - **Cohen's Kappa**: This is essentially a measure of how well the classifier performed as compared to how well it would have performed simply by chance. In other words, a model will have a high Kappa score if there is a big difference between the accuracy and the null error rate. 
 - **F Score**: This is a weighted average of the true positive rate (recall) and precision.
 
-Refrencee and more info : [wikipedia-False-positives-and-false-negatives](https://en.wikipedia.org/wiki/False_positives_and_false_negatives)[wikipedia-Type-I-and-type-II-errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) [wikipedia-Confusion-matrix](https://en.wikipedia.org/wiki/Confusion_matrix)
+Refrencee and more info : [wikipedia-False-positives-and-false-negatives](https://en.wikipedia.org/wiki/False_positives_and_false_negatives),[wikipedia-Type-I-and-type-II-errors](https://en.wikipedia.org/wiki/Type_I_and_type_II_errors) and  [wikipedia-Confusion-matrix](https://en.wikipedia.org/wiki/Confusion_matrix)
