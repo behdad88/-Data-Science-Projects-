@@ -29,6 +29,7 @@ All business metrics can be classified into three broad categories.
 1. Revenue metrics
 2. Profitability metrics
 3. Risk metrics
+
 One way to help distinguish for a particular metric, which of these three categories it falls into, is to think about what people in the company depend on this information and will ask for it. 
 Revenue metrics relate to `sales` and `marketing`. Profitability metrics to `efficiency` and
 `logistics`, `production`, and `operations`. And risk metrics to `risk management`, and are widely used by a company's creditors,
