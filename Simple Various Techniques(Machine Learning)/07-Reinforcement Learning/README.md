@@ -18,7 +18,7 @@ The above image shows robot, diamond and fire. The goal of the robot is to get t
 - The model keeps continues to learn.
 - The best solution is decided based on the maximum reward.
 
-**Difference between Reinforcement learning and Supervised learning
+**Difference between Reinforcement learning and Supervised learning**
 
 | REINFORCEMENT LEARNING |	SUPERVISED LEARNING |
 | ---------------------- | -------------------- |
@@ -31,19 +31,25 @@ The above image shows robot, diamond and fire. The goal of the robot is to get t
  There are two types of Reinforcement:
 
 - **Positive**:  Positive Reinforcement is defined as when an event, occurs due to a particular behavior, increases the strength and the frequency of the behavior. In other words it has a positive effect on the behavior.
+
 Advantages of reinforcement learning are:
+
 	- Maximizes Performance
 	- Sustain Change for a long period of time
-	
+
 Disadvantages of reinforcement learning:
+
 	- Too much Reinforcement can lead to overload of states which can diminish the results
 
 - **Negative**: Negative Reinforcement is defined as strengthening of a behavior because a negative condition is stopped or avoided.
+
 Advantages of reinforcement learning:
+
 	- Increases Behavior
 	- Provide defiance to minimum standard of performance
 
 Disadvantages of reinforcement learning:
+
 	- It Only provides enough to meet up the minimum behavior
 
 - **Various Practical applications of Reinforcement Learning** 
@@ -51,7 +57,7 @@ Disadvantages of reinforcement learning:
 	- RL can be used in robotics for industrial automation.
 	- RL can be used in machine learning and data processing
 	- RL can be used to create training systems that provide custom instruction and materials according to the requirement of students.
-	
+
 RL can be used in large environments in the following situations:
 
 1. A model of the environment is known, but an analytic solution is not available;
