@@ -5,4 +5,3 @@ People who bought also bought ... That is what Association Rule Learning will he
 In this part, I will implement the following Association Rule Learningmodels:
 
 - Apriori
-- Eclat
