@@ -32,14 +32,6 @@ Most of NLP algorithms are classification models, and they include Logistic Regr
 
 A very well-known model in NLP is the Bag of Words model. It is a model used to preprocess the texts to classify before fitting the classification algorithms on the observations containing the texts.
 
-This Repo, consist of :
-
-- Clean texts to prepare them for the Machine Learning models,
-- Create a Bag of Words model,
-- Apply Machine Learning models onto this Bag of Worlds model.
-
-
-
 In fact, a typical interaction between humans and machines using Natural Language Processing could go as follows:
 1. A human talks to the machine
 2. The machine captures the audio
@@ -70,8 +62,15 @@ Here is a description on how they can be used.
     - **Sentence breaking**: It involves placing sentence boundaries on a large piece of text.
     - **Stemming**: It involves cutting the inflected words to their root form.
 
-2. Semantics: Semantics refers to the meaning that is conveyed by a text. Semantic analysis is one of the difficult aspects of Natural Language Processing that has not been fully resolved yet. It involves applying computer algorithms to understand the meaning and interpretation of words and how sentences are structured. Here are some techniques in semantic analysis:
+2. **Semantics**: Semantics refers to the meaning that is conveyed by a text. Semantic analysis is one of the difficult aspects of Natural Language Processing that has not been fully resolved yet. It involves applying computer algorithms to understand the meaning and interpretation of words and how sentences are structured. Here are some techniques in semantic analysis:
 
     - **Named entity recognition (NER**): It involves determining the parts of a text that can be identified and categorized into preset groups. Examples of such groups include names of people and names of places.
     - **Word sense disambiguation**: It involves giving meaning to a word based on the context.
     - **Natural language generation**: It involves using databases to derive semantic intentions and convert them into human language.
+
+
+This Repo, consist of :
+
+- Clean texts to prepare them for the Machine Learning models,
+- Create a Bag of Words model,
+- Apply Machine Learning models onto this Bag of Worlds model.
