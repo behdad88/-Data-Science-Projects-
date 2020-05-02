@@ -1,5 +1,7 @@
 ## Business Metrics for Data-Driven Companies
+
 **Objectives**: We will review best practices for how to use data analytics to make any company more competitive and more profitable. 
+
 - Recognize the most critical business metrics and distinguish them from mere data.
 - Analyze the different roles Business Analysts, Business Data Analysts, and Data Scientists play in various types of companies.
 - Describe the skills required to be hired for, and succeed at, these high-demand jobs.
@@ -8,8 +10,10 @@
 
 
 ### What are business metrics?
+
 What is the highest and best use of a business analyst or a business data analyst?
 The answer is:
+
 - To find out the right question to ask. Then, find the best answer you possibly can in the time, and with the resources available. 
 - Ensuring that your answer has practical impact by translating it into a specific call to action. A specific recommended action, communicated to the relevant decision makers. Using visual metaphors and non technical language.
 
@@ -18,6 +22,7 @@ What change, in our business processes can and should we make right now? To `inc
 
 **What do we mean by, right now?**
 There are several answers. 
+
 - The ideal answer is something like, our company has engineered real time, computerized systems. That optimize for certain dynamic metrics. By adjusting our response to customer and market input. With a delay for processing or latency, of no more than a fraction of a second. 
 - The next best answer is what we call Just in Time. A computerized response is not possible. So we respond to individual customers with a human being. Where that human being has access to the full historical record, of that customers interactions with the company. Whether through buying things, customer support calls, actions on our website, etc. 
 - The third best answer, which is still good, is that the change that we are recommending, can't happen overnight. But it can happen as soon as it has been empirically tested and shown to work. We do testing by making one small change at a time to our website. Creating two different versions, A and B, and comparing which performs better. This is called AB testing. In any case, an AB test can begin within 30 days of a recommendation. And the recommended change can be made as soon as enough data is gathered. To determine that one choice is clearly better than the other. 
@@ -25,7 +30,9 @@ There are several answers.
 So metrics are special numbers that help us to ask and answer the right business question. What decision should we make? What process should we change right now? Metrics are numbers that we can impact when we change our business processes.  For example, for a local bricks and mortar retail clothing store rooted in the state of North Carolina. Where we have a 4.75% sales tax, the sales tax is not a metric. There's nothing that we can do to change it. It's basically a fact of nature for us like the weather. On the other hand the percentage of people who viewed our ad on a particular website. Then used it as a link to click through to our homepage. Can change every time the ad contents and appearance change. Or when the time of day changes, where we run the ad, on what websites it appears and etc.
 
 ### Distinguishing Revenue, Profitability and Risk Metrics
+
 All business metrics can be classified into three broad categories. 
+
 1. Revenue metrics
 2. Profitability metrics
 3. Risk metrics
@@ -58,7 +65,41 @@ are specific to the financial industry. Banks that issue credit cards are in the
 `Traditional business metrics` include standard financial and managerial accounting categories, such as quarterly statements of net cash flow, profits and losses, and changes to balance sheet items such as shareholder's equity. Traditional business metrics have their origins primarily in paper and pencil after the fact reporting. Business decisions, that might be made based on these metrics, will happen usually after long deliberation, sometimes on a scale of months to years. 
 `Dynamic Business Metrics` are defined and can be communicated in a manner that conveys urgency. Metrics that address the right question, what change in our business processes can we make right now to increase revenues, maximize profitability, or reduce risk? 
 Two attributes make a business metric dynamic.
+
 - First, will the metric change significantly over intervals of a month or less? If not, it's not very dynamic. For example, the monthly rent a stand alone retail store in a mall pays on its three-year real estate lease is of course a business metric related to its efficiency and profitability, but it is not a dynamic business metric. There's no point in tracking it because it won't change anytime soon. On the other hand, if a national retail chain with 1,000 mall-based stores is individually negotiating and signing an average of about seven new three-year leases each week, it can and should track average monthly rent per square foot on new real estate leases as an important dynamic metric, against which to set goals and track progress.
 - Second, are their specific actions the company can take that can visibly or significantly impact the metric in the short term? If not, then the metric doesn't lend itself to dynamic tracking. Whether the metric is dynamic, may also depend on the business context. For example, if the 1,000 store retail chain we just mentioned is neither adding nor closing stores and is simply renewing leases on current space, where the old leases had pre-negotiated  terms to be extended, It will be difficult to make much impact on the average monthly rent per square foot. On the other hand, if that retail chain publicly announces that it is going to close 25% of its US retail stores, as the GAP chain did in June of 2015, it may be able to go back to landlords with the proposition, either we leave at the end of the current lease and you'll need to find a new tenant, if you can, who may not pay as much per square foot as we do. Or let's renegotiate our lease terms now. In this case, the average monthly rent per square foot for newly renegotiated leases would be a dynamic metric for the GAP. It's a place they could save money. This is why announcing all your bad newsat once is often a good business strategy. How much impact a business change can have on the metric, is another important thing that we need to observe. If the metric is noisy, then lots of things are affecting it. If its twitchy, that means it's very specifically offended by what we're doing. Traditional metrics, like quarterly revenues, are impacted by dozen of different factors, many of which are completely outside the control of our business. The great new advertising campaign that we launched may not even show up in quarterly revenue metrics if, in fact, most of our customers are government agencies on long-term contracts with a very long sales cycle. Total revenues is always an aggregate number, and as they say on the Kissmetrics website, aggregate data is kind of worthless. Dynamic metrics are twitchy. Small changes in process, in our process, can lead to big impact. For example the percentage of people who will fill an online shopping cart and take their shopping cart all the way to purchase is extremely sensitive to average page load times. Studies have shown that pages that load in three or more seconds are much less likely to lead to sales than pages that load in less than three seconds. 40% of web users will abandon completely, a web page that does not load in three seconds. This is why there's an entire industry devoted to what's called edge caching. Content delivery networks, like Akamai, that retail stores pay to store copies of their websites locally, physically near their customers around the world, saving a precious second or two in load times.
 
 
+### Roles and Companies as They Relate to Big Data
+
+There is a simplified framework that classifies four main types of roles:
+
+1. Business analyst
+2. Business data analyst
+3. Data scientist
+4. Senior software engineer or technical project manager. 
+
+Usually companies classified  into five types based on their fundamental relationship to big data:
+
+1. Strategic consulting firms with a general business focus
+2. Traditional bricks-and-mortar companies in all industries
+3. Strategic consulting firms with an information technology or systems integration focus,
+4. Companies selling hardware and software, or software as a service for gathering, storing, analyzing, and using big data
+5. Digital businesses, where the core of the company's value creation involves real-time analysis of data. 
+
+
+In many respects a business data analyst's work is similar to that of a business analyst. All of the skills required of a business analyst, are also required of
+a business data analyst. The business data analyst’s role, differs from the business analyst’s role in two main ways. 
+
+Two additional requirements, or skills, that make the business data analyst’s job more senior, and generally higher pay. 
+
+- **First** is a conceptual or analytical skill. The business data analyst is expected to be able to think flexibly, about how the data a company is currently collecting could be recombined, and analyzed in new ways to understand the business better. Where business analyst, is generally given a specific problem to analyze. Based on information that has been assembled by someone else. A business data analyst may need to be able to pull together information from data sources scattered throughout the company, and should be able to figure out where to go in the organization, to find the relevant data. In other words, a business data analyst should be able to figure out the right questions to ask, in order to identify opportunities for business process changes, that may be suggested by the data. 
+- **Second** is a related technical skill. While a business analyst is generally given a ready made data set, or a problem definition. A business data analyst, is expected to be able to run SQL, or structured query language, queries to pull useful data out of much larger databases. Or even from distributed collections of unstructured data, scattered in multiple locations within the organization. And to combine that polled data into new data sets that did not previously exist, to support the data analyst's research agenda. Learning SQL is not difficult. You can learn enough SQL in a few weeks to meet the expectations for most business data analyst positions. However, this technical knowledge does form a great divide. People who do not have SQL skills, are dependent on others. Typically the IT department, or database administrators within the organization, to create usable data sets for them. While people with SQL skills can by themselves, access and reorganize almost any raw data in the organization. This level of autonomy and self sufficiency greatly increases the productivity of a business data analyst, and allows them much greater room for creativity, because they can explore hunches or pursue leads. That may not turn into anything without burdening other employees, who would otherwise need to gather and scrub or recombine the necessary data for them.
+
+Look into all US companies, They fall into five groups that ranked from least to most reliant upon proprietary software intellectual property for their business advantage. 
+In other words, they are ranked from most likely to least likely to be hiring for entry level business analyst positions, as opposed to be hiring for more technical software development roles. These rankings are explained in detail on the illustration that accompanies these lectures. 
+- The first group of the five are the traditional strategic business consulting firms. Their business model is that they are paid for advice. They generally focus on ways to improve business processes, increase revenues, maximize profitability, and reduce risk. 
+- The second group is by far the largest. Traditional businesses in all market sectors. These are often referred to as bricks-and-mortar companies. In contrast to digital companies that compete in the same markets but with completely different business models, and often with much lower cost structures. All that brick and mortar costs a lot of money. Many sectors of the traditional economy, such as retail, big box stores, banking and payment processing, financial advisors, taxis, hotels, are facing dangerous competition from digital companies. We'll identify signs that companies are fighting back effectively, and indications that they are lagging behind. 
+- The third group are a small number of strategic business consulting firms that also recommend business process changes, but they specialize in building or installing custom software systems to implement their recommendations. These firms have outsize influence on the market for data analytics, because fortune 500 companies tend to follow their advice. 
+- The fourth group are hardware and software companies. These are the critical companies that together provide the products, and services to gather, store, manage, search, process, analyze, visualize and report the world's data. 
+- The fifth group are the digital companies. They compete primarily against established players in traditional markets. Like providing taxi service, rooms to rent for the night, business and consumer loans, retail shopping, movies, opportunities for communication and social connection. But without the fixed costs of their bricks-and-mortar competitors. Digital companies also create market sectors with no real equivalent before the internet, like Google and search or Ebay and online auctions. All digital companies rely upon massive data processing, generally enhanced by machine learning systems to make real-time decisions. At the heart of their value proposition is business analytics.
